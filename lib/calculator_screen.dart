@@ -183,13 +183,13 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     Color? textColor,
   }) {
     return Padding(
-      padding: const EdgeInsets.all(4),
+      padding: const EdgeInsets.all(6),
       child: Material(
         color: bgColor ?? const Color(0xFF333333),
-        borderRadius: BorderRadius.circular(12),
+        shape: const CircleBorder(),
         child: InkWell(
           onTap: onTap,
-          borderRadius: BorderRadius.circular(12),
+          customBorder: const CircleBorder(),
           splashColor: Colors.white24,
           highlightColor: Colors.white10,
           child: Center(
